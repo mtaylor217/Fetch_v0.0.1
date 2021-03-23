@@ -1,0 +1,24 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Fetch</string>
+    <string name="name_field">Name</string>
+    <string name="quantity_header">Quantity</string>
+    <string name="total_header">Total</string>
+    <string name="total_start_amount">£5.00</string>
+    <string name="order_button">Order</string>
+    <string name="order_summary_name">Name: <xliff:g id="customerName" example="Amy">%s</xliff:g></string>
+    <string name="order_summary_quantity">Quantity: <xliff:g id="quantity" example="2">%d</xliff:g></string>
+    <string name="order_summary_total">Total: £<xliff:g id="total" example="10">%d</xliff:g>.00</string>
+    <string name="username_field">Username</string>
+    <string name="password_field">Password</string>
+    <string name="Login_button">Log In</string>
+    <string name="Guest_Login_button">Continue as Guest</string>
+    <string name="login_success_message">Login Successful</string>
+    <string name="login_error_message">Login Failed - Check Username and Password are correct</string>
+    <string name="submit_postcode_button">Submit Postcode</string>
+    <string name="detect_location_button">Detect Location</string>
+    <string name="postcode_field">Enter Postcode</string>
+    <string name="category_details">My Details</string>
+    <string name="category_orders">My Orders</string>
+    <string name="category_payment_methods">My Payment Methods</string>
+    <string name="category_addresses">My Saved Addresses</string>
+</resources>

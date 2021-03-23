@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity">
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="56dp" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_picture"
+        android:text="Profile Name"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+    <LinearLayout
+        android:id="@+id/profile_setup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profile_name"
+        android:orientation="vertical">
+
+        <!-- Details category -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/details"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_details" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/details"
+                    android:background="@android:color/black" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <!-- Orders category -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/orders"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_orders" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/orders"
+                    android:background="@android:color/black" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <!-- Payment Methods category -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/paymentMethods"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_payment_methods" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/paymentMethods"
+                    android:background="@android:color/black" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <!-- Addresses category -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/addresses"
+                    style="@style/CategoryStyle"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="@string/category_addresses" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/addresses"
+                    android:background="@android:color/black" />
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
